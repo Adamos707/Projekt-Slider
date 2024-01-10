@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+header{
+width:100%;
+height:50%;
+overflow:hidden;
+}
+header figure img{
+    float:left;
+    width:20%;
+    height:50%;
+}
+header figure{
+    position:relative;
+    width:500%;
+    margin:0;
+    left:0;
+    animation:30s slider infinite alternate-reverse;
+}
+@keyframes slider{
+    0%{left:0%;}
+    20%{left:-100%;}
+    25%{left:-100%;}
+    45%{left:-200%;}
+    50%{left:-200%;}
+    70%{left:-300%;}
+    75%{left:-300%;}
+    95%{left:-400%;}
+    100%{left:-400%;}
+}
+nav li{
+    text-align:center;
+    display:inline;
+    line-height: 100px;
+    padding:30px;
+    font-weight: bold;
+    font-size:1.5em;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav{
+ height: 100px;
+ background-color:black;
+ text-align:center;
+ position:sticky;
+ margin:0;
+ top:0;
+}
+.sekcja1 h2, .sekcja2 h2,  .sekcja3 h2{
+    margin-left:100px;
+    margin-right:100px;
+    padding-top:110px;
+    padding-bottom: 20px;
+    font-size: 2.3em;
+    font-family: 'Padyakke Expanded One', cursive;
+
+}
+.sekcja1 p, .sekcja2 p, .sekcja3 p{
+    margin-left:100px;
+    margin-right:100px;
+    padding-top:20px;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    
+}
+.sekcja1, .sekcja2, .sekcja3{
+
+background-color:lightgray;
+}
+
+footer{
+    height: 100px;
+    background-color:black;
+}
+.middle{
+    text-align:center;
+}
+.middle img{
+    width:50px;
+    padding-top: 25px;
+    padding-bottom:25px;
+}
+#parallax1{
+    height:40vh;
+    width:100%;
+    background-image:url("../img/poolrooms.webp");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+#parallax2{
+    height:60vh;
+    width:100%;
+    background-image:url("../img/p2.jpeg");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+#parallax3{
+    height:80vh;
+    width:100%;
+    background-image:url("../img/p3.jpg");
+    background-size:cover;
+    display:table;
+    background-attachment:fixed;
+}
+.obrazy{
+    text-align:center;
+}
+.obraz1{
+    transition: 1s ease;
+    border: 7px green solid;
+    border-radius:20px;
+}
+.obraz1:hover{
+    filter:saturate(200%);
+    border-radius: 100%;
+    transform: rotate(360deg);
+}
+.obraz2{
+    transition: 1s ease-out;
+}
+.obraz2:hover{
+    filter:hue-rotate(150deg);
+    box-shadow: 5px 5px 10px black;
+    transform:scale(1.2) rotate(-300deg);
+}
+.obraz3{
+    transition:2s ease-in
+}
+.obraz3:hover{
+   filter:sepia(80%) 
+}
+.obraz4{
+    transition: ease-out 1s;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 5px solid black;
+}
+.obraz4:hover{
+    filter:invert(100%);
+    border: 5px solid white;
+}
+@media(max-width:500px)
+{
+    nav li{
+        font-size:1.1em;
+        padding:15px;
+    }
+    .sekcja1 p, .sekcja2 p, .sekcja3 p{
+        font-size:1.1em;
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .obrazy img{
+        width:200px;
+    }
+}
